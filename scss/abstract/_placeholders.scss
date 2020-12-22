@@ -1,0 +1,13 @@
+%borderRadius {
+  border-radius: $borderRadius;
+}
+
+%container {
+  box-sizing: border-box;
+  margin: 30px auto;
+  width: 90%;
+}
+
+%transition {
+  transition: all 0.1s ease-in-out;
+}

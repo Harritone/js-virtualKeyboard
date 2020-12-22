@@ -1,13 +1,13 @@
 export default [
   {
-    small: 'Capslock',
+    small: 'CapsLock',
     shift: null,
-    code: 'Capslock',
+    code: 'CapsLock',
   },
   {
     small: 'ё',
     shift: 'Ё',
-    code: 'Backqoute',
+    code: 'Backquote',
   },
   {
     small: '1',
@@ -132,12 +132,12 @@ export default [
   {
     small: 'х',
     shift: 'Х',
-    code: 'Bracket Left',
+    code: 'BracketLeft',
   },
   {
     small: 'ъ',
     shift: 'Ъ',
-    code: 'Bracket Right',
+    code: 'BracketRight',
   },
   {
     small: '\\',
@@ -197,17 +197,19 @@ export default [
   {
     small: 'э',
     shift: 'Э',
-    code: 'Qoute',
+    code: 'Quote',
   },
   {
     small: 'Enter',
     shift: null,
     code: 'Enter',
+    width: 'enter',
   },
   {
-    small: 'ShiftLeft',
+    small: 'Shift',
     shift: null,
     code: 'ShiftLeft',
+    width: 'shift-l',
   },
   {
     small: '\\',
@@ -270,27 +272,28 @@ export default [
     code: 'IntlRo',
   },
   {
-    small: 'ArrowUp',
+    small: '&uarr;',
     shift: null,
     code: 'ArrowUp',
   },
   {
-    small: 'ShiftRIght',
+    small: 'Shift',
     shift: null,
     code: 'ShiftRight',
+    width: 'shift',
   },
   {
-    small: 'Control',
+    small: 'Ctrl',
     shift: null,
     code: 'ControlLeft',
   },
   {
-    small: 'Meta',
+    small: 'Win',
     shift: null,
     code: 'MetaLeft',
   },
   {
-    small: 'AltLeft',
+    small: 'Alt',
     shift: null,
     code: 'AltLeft',
   },
@@ -298,35 +301,41 @@ export default [
     small: 'Space',
     shift: null,
     code: 'Space',
+    width: 'space',
   },
   {
-    small: 'AltRight',
+    small: 'Alt',
     shift: null,
     code: 'AltRight',
   },
   {
-    small: 'MetaRight',
+    small: 'Win',
     shift: null,
-    code: 'MetaRight',
+    code: 'Win',
   },
   {
-    small: 'ControlRight',
+    small: 'Ctrl',
     shift: null,
     code: 'ControlRight',
   },
   {
-    small: 'ArrowLeft',
+    small: '&larr;',
     shift: null,
     code: 'ArrowLeft',
   },
   {
-    small: 'ArrowDown',
+    small: '&darr;',
     shift: null,
     code: 'ArrowDown',
   },
   {
-    small: 'ArrowRight',
+    small: '&rarr;',
     shift: null,
     code: 'ArrowRight',
+  },
+  {
+    small: 'Delete',
+    shift: null,
+    code: 'Delete',
   },
 ];

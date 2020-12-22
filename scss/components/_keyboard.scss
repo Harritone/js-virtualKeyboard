@@ -1,0 +1,102 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5px 5px 10px;
+  @extend %container;
+  margin-top: 0;
+
+  background-color: $dark;
+  @extend %borderRadius;
+
+  &__row {
+    display: flex;
+    // flex-wrap: wrap;
+  }
+
+  &__key {
+    flex: 1 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: bottom;
+    display: inline-block;
+    margin: 0.4vw;
+    padding: 1.6vw 2vw 1.8vw;
+
+    min-height: 2wv;
+    min-width: 3wv;
+    max-width: 100%;
+
+    font-size: 1.2vw;
+    background-color: #333;
+    color: $color-light;
+
+    border-radius: $borderRadius;
+    cursor: pointer;
+
+    &:hover,
+    &[data-fn='true']:hover {
+      background-color: $color-hover;
+    }
+    &:active {
+      background-color: $color-press;
+    }
+
+    &.active {
+      background-color: $color-press;
+    }
+
+    .sub {
+      width: 100%;
+      justify-self: start;
+      align-self: flex-start;
+      text-align: left;
+      font-size: 1vw;
+      color: #e6b3b3;
+
+      &-active {
+        font-size: 1.4vw;
+        color: red;
+      }
+    }
+
+    &[data-fn='true'] {
+      background-color: $color-fn;
+
+      &.active {
+        background-color: $color-press;
+      }
+    }
+  }
+
+  .width {
+    &-space {
+      flex: 10;
+    }
+
+    &-shift {
+      flex: 55;
+    }
+
+    &-shift-l {
+      flex: 15;
+    }
+
+    &-enter {
+      flex: 3;
+    }
+  }
+
+  .wide-shift {
+    flex: 10;
+  }
+}
+
+.letter {
+  font-size: 1.4vw;
+
+  &.inactive {
+    font-size: 1vw;
+  }
+}

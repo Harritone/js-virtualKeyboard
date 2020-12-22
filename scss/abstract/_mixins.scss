@@ -1,0 +1,5 @@
+// Buttons' states
+// Fonts
+@mixin font($size: 1.6rem, $family: $font-default) {
+  font: $size $family;
+}

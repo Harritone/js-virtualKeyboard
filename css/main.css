@@ -1,0 +1,240 @@
+@use 'sass:color';
+.keyboard {
+  border-radius: 0.4vw; }
+
+p, .keyboard, .output {
+  box-sizing: border-box;
+  margin: 30px auto;
+  width: 90%; }
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+main {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
+b,
+strong {
+  font-weight: bolder; }
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+img {
+  border-style: none; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button,
+input {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+[type='button'],
+[type='reset'],
+[type='submit'],
+button {
+  -webkit-appearance: button; }
+
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto; }
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font: 1.6rem "Verdana", sans-serif;
+  background-color: #f5f5f5; }
+
+p {
+  max-width: 760px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.9rem; }
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5px 5px 10px;
+  margin-top: 0;
+  background-color: #525252; }
+  .keyboard__row {
+    display: flex; }
+  .keyboard__key {
+    flex: 1 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: bottom;
+    display: inline-block;
+    margin: 0.4vw;
+    padding: 1.6vw 2vw 1.8vw;
+    min-height: 2wv;
+    min-width: 3wv;
+    max-width: 100%;
+    font-size: 1.2vw;
+    background-color: #333;
+    color: #f5f5f5;
+    border-radius: 0.4vw;
+    cursor: pointer; }
+    .keyboard__key:hover, .keyboard__key[data-fn='true']:hover {
+      background-color: #24ac02e0; }
+    .keyboard__key:active {
+      background-color: #47db47; }
+    .keyboard__key.active {
+      background-color: #47db47; }
+    .keyboard__key .sub {
+      width: 100%;
+      justify-self: start;
+      align-self: flex-start;
+      text-align: left;
+      font-size: 1vw;
+      color: #e6b3b3; }
+      .keyboard__key .sub-active {
+        font-size: 1.4vw;
+        color: red; }
+    .keyboard__key[data-fn='true'] {
+      background-color: #1a1a1a; }
+      .keyboard__key[data-fn='true'].active {
+        background-color: #47db47; }
+  .keyboard .width-space {
+    flex: 10; }
+  .keyboard .width-shift {
+    flex: 55; }
+  .keyboard .width-shift-l {
+    flex: 15; }
+  .keyboard .width-enter {
+    flex: 3; }
+  .keyboard .wide-shift {
+    flex: 10; }
+
+.letter {
+  font-size: 1.4vw; }
+  .letter.inactive {
+    font-size: 1vw; }
+
+.output {
+  display: block;
+  padding: 1.5rem;
+  height: 20rem;
+  font: 2.2rem "Courier New", "Courier", monospace;
+  border-radius: 0.4vw;
+  border: 5px solid #ffdb6b;
+  resize: none; }
+  .output, .output:focus {
+    outline: none; }
